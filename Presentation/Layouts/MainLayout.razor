@@ -1,2 +1,17 @@
 ﻿@inherits LayoutComponentBase
 
+<head>
+    <RadzenTheme Theme="material" />
+</head>
+
+<RadzenLayout>
+    <RadzenSidebar>
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Icon="Dashboard" Text="Dashboard" />
+            <RadzenPanelMenuItem Icon="Description" Text="Transaction" />
+        </RadzenPanelMenu>
+    </RadzenSidebar>
+    <RadzenBody>
+        @Body
+    </RadzenBody>
+</RadzenLayout>
