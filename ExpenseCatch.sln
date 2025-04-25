@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseCatch", "ExpenseCatch.csproj", "{520E229A-B782-4991-92EF-3240296AAFED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{520E229A-B782-4991-92EF-3240296AAFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520E229A-B782-4991-92EF-3240296AAFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520E229A-B782-4991-92EF-3240296AAFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520E229A-B782-4991-92EF-3240296AAFED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82FB0DAE-872A-4103-88F0-71A26BEB25E7}
+	EndGlobalSection
+EndGlobal
