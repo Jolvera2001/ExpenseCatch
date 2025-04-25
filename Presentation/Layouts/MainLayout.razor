@@ -1,17 +1,27 @@
 ﻿@inherits LayoutComponentBase
 
 <head>
-    <RadzenTheme Theme="material" />
+    <RadzenTheme Theme="material"/>
 </head>
 
 <RadzenLayout>
     <RadzenSidebar>
         <RadzenPanelMenu>
-            <RadzenPanelMenuItem Icon="Dashboard" Text="Dashboard" />
-            <RadzenPanelMenuItem Icon="Description" Text="Transaction" />
+            <RadzenPanelMenuItem Icon="Dashboard" Text="Dashboard" Click="@(() => navigateTo("/"))" />
+            <RadzenPanelMenuItem Icon="Description" Text="Transaction" Click="@(() => navigateTo("/Transactions"))" />
         </RadzenPanelMenu>
     </RadzenSidebar>
     <RadzenBody>
         @Body
     </RadzenBody>
 </RadzenLayout>
+
+@code {
+    [Inject]
+    private NavigationManager _navigation { get; set; }
+    
+    private void navigateTo(string route)
+    {
+        _navigation.NavigateTo(route);
+    }
+}

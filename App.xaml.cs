@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Radzen;
-using System.Configuration;
-using System.Data;
 using System.Windows;
+using ExpenseCatch.Services;
 
 namespace ExpenseCatch
 {
@@ -23,8 +22,7 @@ namespace ExpenseCatch
             services.AddRadzenComponents();
             
             // setup di
-            // services.AddSingleton<>();
-            // ...
+            services.AddSingleton<DbContextService>();
             
             Resources.Add("mainServices", services.BuildServiceProvider());
         }

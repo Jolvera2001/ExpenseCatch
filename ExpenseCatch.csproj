@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
         <PackageReference Include="LiteDB" Version="5.0.21" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.60" />
         <PackageReference Include="Radzen.Blazor" Version="6.6.3" />
