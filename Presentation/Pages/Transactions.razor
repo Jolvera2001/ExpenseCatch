@@ -1,6 +1,30 @@
 ﻿@page "/Transactions"
-<h3>Transactions</h3>
+@using ExpenseCatch.Models.Domain
 
-@code {
-    
-}
+<RadzenStack>
+    <RadzenRow>
+        <RadzenButton>New Transactions</RadzenButton>
+    </RadzenRow>
+    <RadzenDataGrid Data="@_transactions" @bind-Value=@_selectedTransactions>
+        <RadzenDataGridColumn 
+            Property="@nameof(RecurringTransaction.Name)" 
+            Title="Name" 
+            Frozen="true" 
+            Width="80px" 
+            TextAlign="TextAlign.Center"/>
+        <RadzenDataGridColumn 
+            Property="@nameof(RecurringTransaction.Description)" 
+            Title="Description" 
+            Width="200px"/>
+        <RadzenDataGridColumn 
+            Property="@nameof(RecurringTransaction.Amount)" 
+            Title="Amount" 
+            Width="120px"
+            FormatString="{0:C}"/>
+        <RadzenDataGridColumn 
+            Property="@nameof(RecurringTransaction.StartDate)" 
+            Title="Start Date" 
+            Width="150px"
+            FormatString="{0:d}"/>
+    </RadzenDataGrid>
+</RadzenStack>

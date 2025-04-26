@@ -17,6 +17,7 @@ namespace ExpenseCatch
 
             // web view stuff
             services.AddWpfBlazorWebView();
+            services.AddBlazorWebViewDeveloperTools();
 
             // ui
             services.AddRadzenComponents();
