@@ -18,7 +18,6 @@
 
   <ItemGroup>
         <Folder Include="Models\PageModels\" />
-        <Folder Include="Presentation\ViewModels\" />
   </ItemGroup>
 
 </Project>
